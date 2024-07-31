@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ENCHRIDION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .dropbtn {
+  background-color:white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.categories {
+  position: static;
+  display: inline-block;
+}
+
+.categories-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.categories-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.categories-content a:hover {background-color:  lightgray;}
+
+.categories:hover .categories-content {display: block;}
+
+.categories:hover .dropbtn {background-color: lightgray;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/logo3.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="ch1.html" class="w3-bar-item w3-button w3-wide">ENCHRIDION</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+        <div class="categories">
+            <button class="dropbtn">BROWNIES & BLONDIES</button>
+            <div class="categories-content">
+              <a href="b1.html">Chocolate Fudge browine</a>
+              <a href="b2.html">Double Chocolate Chip Blondie</a>
+              <a href="b3.html">Vegan Fudge Browine</a>
+              <a href="b4.html">Vegan Cinnamon Roll Blondie</a>
+            </div>
+          </div>
+    <a href="#about" class="w3-bar-item w3-button">CORPORATE GIFTS</a>
+      <div class="categories">
+        <button class="dropbtn">SHOP BUNDLES</button>
+        <div class="categories-content">
+          <a href="b5.html">8 PC Bundles</a>
+          <a href="b6.html">12 PC Bundles</a>
+          <a href="b7.html">Party Packs</a>
+          <a href="b8.html">Tins</a>
+        </div>
+      </div>
+      <div class="categories">
+        <button class="dropbtn">GIFT CARDS</button>
+        <div class="categories-content">
+          <a href="b9.html">Buy Giftcards</a>
+          <a href="b10.html">Check Gift Card Balance</a>
+        </div>
+      </div>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="w3-container" style="padding:128px 16px">
+    <h3 class="w3-center">THE TEAM</h3>
+    <p class="w3-center w3-large">The ones who runs this company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="https://static.wikia.nocookie.net/mugen/images/d/d6/ScratchCat-Large.png/revision/latest?cb=20210731034507" alt="Scartch" style="width:65%">
+          <div class="w3-container">
+            <h3>SCRATCH</h3>
+            <p>Scratch is the world's largest free coding community for kids.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-download"></i> Download</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="https://cdn-images-1.medium.com/max/800/0*J0S8JpB9dPfCpIhM" alt="Steak" style="width:82%">
+          <div class="w3-container">
+            <h3>PYSCRIPTER</h3>
+            <p>PyScripter is a free and open-source Python integrated development environment for windows.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-download"></i> Download</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="data:image/png;base64,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" alt="vs" style="width:73%">
+          <div class="w3-container">
+            <h3>VISUAL STUDIO CODE</h3>
+        <p>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-download"></i> Download</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcoQPcyzzsPRzWez3p5sC9QnOph2G7LHuDYa8HhRZ7QHhORkQ2LfCgSACWnwQKv09ongE&usqp=CAU" alt="Dev-C" style="width:100%">
+          <div class="w3-container">
+            <h3>DEV C++</h3>
+            <p>Dev-C++ is a free full-featured integrated development environment distributed under the GNU General Public License for programming in C and C++.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-download"></i> Download</button></p>
+          </div>
+        </div>
+      </div>
+  <div class="w3-container" style="padding:128px 16px">
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/XAMPP_logo.svg/1200px-XAMPP_logo.svg.png" alt="XAmpp" style="width:33%">
+              <div class="w3-container">
+                <h3>XAMPP</h3>
+                <p>XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages.</p>
+                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-download"></i> Download</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="https://www.esoftner.com/wp-content/uploads/2019/03/Turbo-C-Free-Download.jpeg" alt="turbo" style="width:65%">
+              <div class="w3-container">
+                <h3>TURBO C</h3>
+                <p>Turbo C is a discontinued integrated development environment and compiler for the C programming language.</p>
+                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-download"></i> Download</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+</body>
+</html>
